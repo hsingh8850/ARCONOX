@@ -432,14 +432,13 @@ body {
 }
 
 body {
-  background-color: #1b1b1b;
+  background-color: black;
   color: #f4f4f4;
 }
 
 .about-us {
   text-align: center;
   padding: 2rem;
-  
 }
 
 .about-us h1 {
@@ -452,19 +451,15 @@ body {
   margin-bottom: 2rem;
 }
 
-.highlight {
-  color: #ff4444;
-}
-
-
 .our-team {
   padding: 2rem;
+  text-align: left;
 }
 
 .our-team h2 {
   font-size: 2rem;
-  color: #ff4444;
   margin-bottom: 1.5rem;
+  margin-left: 48px;
 }
 
 .team-grid {
@@ -475,19 +470,21 @@ body {
 }
 
 .team-member {
-  background-color: #333;
+  background-color: #222222;
   padding: 1rem;
   border-radius: 8px;
-  width: 150px;
+  width: 200px;
   text-align: center;
+  border-color: #910000;
 }
 
 .profile-pic {
   width: 80px;
   height: 80px;
   background-size: cover;
-  background-position: center;
-  border-radius: 50%;
+  background-position: center; /* adjust to control the size  */
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
   margin: 0 auto 1rem;
 }
 
@@ -508,29 +505,31 @@ body {
 }
 
 .what-we-do {
-  text-align: center;
-  max-width: 800px;
+  text-align: left;
+  max-width: 1200px;
   padding: 20px;
+  margin-left: 48px;
 }
 
 .what-we-do h1 {
-  font-size: 2.5em;
-  color: #fff;
-  background-color: #d32f2f;
-  display: inline-block;
+  font-size: 2em;
   padding: 5px 10px;
   margin-bottom: 20px;
+  margin-left: 48px;
 }
 
 .what-we-do p {
   font-size: 1.2em;
   margin-bottom: 30px;
+  margin-left: 48px;
 }
 
 .services {
+  max-width: 700px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+  grid-template-columns: auto auto;
+  margin-top: 20px;
 }
 
 .service-box {
@@ -538,7 +537,7 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  border-top: 3px solid #d32f2f;
+  border-top: 3px solid #910000;
 }
 
 .service-box h2 {
