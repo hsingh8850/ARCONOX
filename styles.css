@@ -5,6 +5,12 @@
   font-family: "Familjen Grotesk";
   scroll-behavior: smooth;
   background-color: transparent;
+  color: white;
+}
+:root {
+  --primary-red: #910000;
+  --primary-black: #000000;
+  --secondary-red: #e20606;
 }
 
 .header {
@@ -22,7 +28,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.419);
   backdrop-filter: blur(5px);
   color: rgb(0, 0, 0);
   position: fixed;
@@ -56,7 +62,7 @@ a {
   text-decoration: none;
 }
 .title {
-  padding: 10% 0 0 10%;
+  padding: 15% 0 0 10%;
   background-image: url(images/hero.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -431,11 +437,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-body {
-  background-color: black;
-  color: #f4f4f4;
-}
-
 .about-us {
   text-align: center;
   padding: 2rem;
@@ -574,6 +575,7 @@ body {
 
 .contact-section h1 {
   margin-bottom: 20px;
+  font-size: 30px;
 }
 
 .contact-section p {
@@ -587,6 +589,7 @@ body {
 .form-group label {
   display: block;
   margin-bottom: 5px;
+  color: white;
 }
 
 .form-group input,
@@ -595,7 +598,7 @@ body {
   padding: 10px;
   border: 1px solid #e20606;
   border-radius: 4px;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   color: white;
 }
 
@@ -631,11 +634,10 @@ body {
 }
 
 .contact-option {
-  background-color: #1E1E1E;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .contact-option img {
